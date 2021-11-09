@@ -10,29 +10,21 @@ body {
   height: 100vh;
   font-family: Lexend Deca;
   font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  1fr;
 
+}
+
+
+.container {
+  height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: hsl(0, 0%, 95%);
-}
-
-.main {
-  height: 100vh;
-  display: grid;
-}
-
-.container {
-  display: grid;
-  /* grid-template-columns: repeat(3, 250px); */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-template-rows: repeat(3, auto);
-  grid-template-columns: 250px; */
-  /* grid-auto-rows: auto; */
-  grid-auto-flow: row;
-  border-radius: 1rem;
-  
-
+  grid-template-columns: repeat(3,250px);
+  grid-auto-rows: auto;
 }
 
 .component {
@@ -94,4 +86,32 @@ body {
 
 .icon {
   width: 3.3rem;
+}
+
+@media (max-width: 375px) {
+  
+  body {
+
+    
+  }
+
+  .container { 
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(3,auto);
+  }
+
+  .component.sedans {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  
+  .component.luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  .attribution {
+    margin: 2rem;
+  }
+  
 }
