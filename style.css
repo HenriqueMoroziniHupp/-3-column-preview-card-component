@@ -11,13 +11,10 @@ body {
   font-family: Lexend Deca;
   font-size: 15px;
   background-color: hsl(0, 0%, 95%);
-  /* position: relative; */
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows:  1fr;
 
-  justify-content: center;
-  align-items: center;
 }
 
 
@@ -91,16 +88,26 @@ body {
   width: 3.3rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 375px) {
   
-  body {
-    
-    
-  }
 
   .container { 
     grid-template-columns: 250px;
     grid-template-rows: repeat(3,auto);
+  }
+
+  .component.sedans {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  
+  .component.luxury {
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: hsl(179, 100%, 13%);
+  }
+
+  .attribution {
+    margin: 2rem;
   }
   
 }
