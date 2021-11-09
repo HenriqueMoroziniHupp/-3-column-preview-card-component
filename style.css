@@ -90,10 +90,6 @@ body {
 
 @media (max-width: 375px) {
   
-  body {
-
-    
-  }
 
   .container { 
     grid-template-columns: 250px;
