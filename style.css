@@ -10,11 +10,16 @@ body {
   height: 100vh;
   font-family: Lexend Deca;
   font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .main {
   height: 100%;
   display: grid;
+  /* grid-template-columns: 1fr;
+  grid-template-rows: 1fr; */
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 95%);
