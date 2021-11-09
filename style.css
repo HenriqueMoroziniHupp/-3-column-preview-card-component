@@ -10,14 +10,16 @@ body {
   height: 100vh;
   font-family: Lexend Deca;
   font-size: 15px;
-}
 
-.main {
-  height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 95%);
+}
+
+.main {
+  height: 100vh;
+  display: grid;
 }
 
 .container {
@@ -93,6 +95,3 @@ body {
 .icon {
   width: 3.3rem;
 }
-/* 
-Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
